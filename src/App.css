@@ -1,0 +1,98 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-bottom: 2px solid #a31c25;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a31c25;
+}
+
+.week-switcher {
+  display: flex;
+}
+
+.week-switcher button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #a31c25;
+  color: white;
+  border-radius: 5px;
+}
+
+.week-switcher button:hover {
+  background-color: #87151b;
+}
+
+.schedule-container {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Выровнять текст по центру */
+}
+
+.schedule-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.schedule-table tr:hover {
+  background-color: #ddd;
+}
+
+h1 {
+  text-align: center;
+  color: #a31c25;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .schedule-table th, .schedule-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .week-switcher button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .schedule-container {
+    padding: 10px;
+  }
+}
